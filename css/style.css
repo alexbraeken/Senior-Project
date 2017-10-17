@@ -1,0 +1,480 @@
+/* Global */
+
+html{
+  position:relative;
+  min-height:100%;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  line-height:1.5;
+  margin:0;
+  margin-bottom: 50px;
+  background-color:#efe1e1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height: 38px;
+  background: #F25951;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button_1:hover{
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+
+.login_tab{
+  margin:0;
+  padding:0;
+}
+
+.highlight{
+  color: #F25951;
+}
+
+.selector{
+  height:40px;
+  padding:5px;
+  margin:5px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+}
+
+hr.style-five {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 70%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+  background: linear-gradient(to right, #F25951 , #7F0D0D)
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+
+/*Header*/
+
+header{
+
+  background:url('/site/img/header.gif') 0 -100px;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#330505 3px solid;
+  font-family: 'Ubuntu', sans-serif;
+  width:100%;
+  position: fixed;
+  z-index: 1;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  color:#F25951;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+header a:hover{
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #F25951;
+  text-underline-position: under;
+}
+
+header .text_input{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  border-width: 1px;
+}
+
+header .button_1{
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+nav .container{
+  float: right;
+  width:100%;
+}
+
+#pass_input{
+  display:none;
+}
+
+
+
+
+/* Showcase */
+#showcase{
+  min-height: 400px;
+  background:url('/site/img/gym.jpg') no-repeat 0 -500px;
+  text-align: center;
+  color: #F25951;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 2px 2px 8px #000000;
+  border-bottom:#330505 3px solid;
+}
+
+#showcase h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+
+  font-size: 20px;
+
+}
+
+/*subscribe*/
+
+#subscribe{
+  padding-left: 15px;
+  color:#ffffff;
+  background:url('/site/img/header.gif') 0 -100px;
+  border-bottom:#330505 3px solid;
+}
+
+#subscribe h1{
+  float: left;
+}
+
+#subscribe form{
+  float:right;
+  margin-top: 15px;
+}
+
+#subscribe input[type="email"]{
+  padding:4px;
+  height: 25px;
+  width: 250px;
+}
+
+/*Boxes*/
+
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes .box{
+  float:left;
+  width: 30%;
+  padding:10px;
+  text-align: center;
+}
+
+#boxes .box img{
+  width: 90px;
+  height: 90px;
+}
+
+/*Descriptions*/
+
+#tracking_description, #equipment_description, #support_description{
+  display:none;
+  text-align: center;
+  color: #F25951;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 2px 2px 8px #000000;
+  padding: 100px;
+  margin-bottom: 0;
+}
+#tracking_description{
+  background:url('/site/img/tracking-showcase.jpg') no-repeat 0 -500px;
+}
+
+#equipment_description{
+  background:url('/site/img/equipment-showcase.jpg') no-repeat 0 -500px;
+}
+
+#support_description{
+  background:url('/site/img/support-showcase.jpg') no-repeat 0 -200px;
+}
+
+/*profile nav*/
+
+
+#profile_nav{
+  padding-left: 15px;
+  color:#ffffff;
+  background:url('/site/img/header.gif') 0 -100px;
+  border-bottom:#330505 3px solid;
+}
+
+#profile_nav h1{
+  float: left;
+}
+
+#profile_nav .gym_logo img{
+  width:50px;
+  float:left;
+  padding-right: 20px;
+  padding-top:10px;
+}
+/*Main Profile*/
+
+#main .container{
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+/*Services*/
+#services{
+  padding:10px;
+  margin:10px;
+}
+.new_user{
+  width:100px;
+  hiehgt:20px;
+  border-radius: 2px;
+}
+
+
+/*Sidebar*/
+
+aside#progress{
+  float:right;
+  width:30%;
+  margin-top: 10px;
+  min-height: inherit;
+}
+
+aside#piechart#chart_div{
+  float:right;
+  width:100%;
+}
+.well{
+  width: auto;
+  min-height: inherit;
+}
+
+#create_sidebar{
+  visibility: hidden;
+}
+
+
+/*Main-col*/
+article#main-col{
+  float:left;
+  width: 65%;
+  font-size: 20px;
+}
+
+article#user_age,#user_height,#user_weight{
+  width:100px;
+  padding: 5px;
+}
+
+article#main-col ul{
+  list-style-type: disc;
+}
+
+#add_user{
+  background-color: #fff;
+  padding: 10px;
+  margin:10px;
+  display:none;
+  box-shadow: 5px 5px 2px #888888;
+}
+
+/*User table*/
+
+#user_list table{
+		display: table;
+
+	 	width: 100%;
+	 	background: #fff;
+	 	margin: 0;
+	 	box-sizing: border-box;
+
+	 }
+#user_list thead{
+	 	background: #8b8b8b;
+	 	color: #fff;
+
+	 }
+#user_list tr{
+		display: table-row;
+	}
+
+#user_list td{
+		display: table-cell;
+
+		padding: 6px;
+		border-bottom: 1px solid #e5e5e5;
+		text-align: center;
+	}
+
+
+/*footer*/
+
+footer{
+  position: absolute;
+  padding: 0;
+  bottom: 0;
+  color:#7F0D0D;
+  background-color: #000000;
+  text-align:center;
+  height: 50px;
+  width: 100%;
+}
+
+
+/* Media Queries*/
+@media(max-width:820px){
+  header #branding,
+  header nav,
+  header nav li,
+  #subscribe h1,
+  #subscribe form,
+  #main-col,
+  #boxes .box{
+    float:none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header{
+    padding-bottom: 25px;
+  }
+
+  #pass_input input[type="submit"]{
+      width: 30%;
+  }
+
+
+  .content{
+    margin-top: 80px;
+  }
+
+  #showcase h1{
+    margin-top: 40px;
+  }
+
+  #subscribe button{
+    display: block;
+    width: 100%;
+  }
+
+  #subscribe form input[type="email"]{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  aside#progress{
+    float: left;
+    min-width: 230px;
+    display: block;
+
+  }
+  aside #piechart, #chart_div{
+    float:none;
+    width:100%;
+    display:block;
+  }
+  .well{
+    float:none;
+    width:100%;
+    display: block;
+  }
+}
+
+@media(max-width:526px){
+  .content{
+    margin-top: 100px;
+  }
+}
+
+/** {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/

@@ -1,0 +1,26 @@
+CREATE TABLE Customers(
+cust_id VARCHAR (30) PRIMARY KEY,
+Fname VARCHAR (30) NOT NULL,
+Lname VARCHAR (30) NOT NULL,
+Date_of_Birth DATETIME NOT NULL,
+password VARCHAR (88) NOT NULL
+);
+
+CREATE TABLE workout_plans(
+plan_id VARCHAR (30) PRIMARY KEY,
+plan_name VARCHAR (90) NOT NULL,
+plan_duration INT (5) NOT NULL,
+plan_category VARCHAR (30) NOT NULL,
+plan_filepath VARCHAR (50) NOT NULL
+);
+
+CREATE TABLE user_workouts(
+cust_id VARCHAR (30) PRIMARY KEY,
+plan_id VARCHAR (30) NOT NULL,
+date_start DATETIME NOT NULL,
+date_end DATETIME NOT NULL,
+FOREIGN KEY (cust_id) REFERENCES Customers(cust_id),
+FOREIGN KEY (plan_id) REFERENCES workout_plans(plan_id)
+);
+
+INSERT INTO Customers ('test','Alex','Braeken','2017-02-18 07:25:07','test'):
